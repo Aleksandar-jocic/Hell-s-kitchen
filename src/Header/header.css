@@ -1,0 +1,47 @@
+#menu-box {
+    position: fixed;
+    right: 0;
+    top:56px;
+    width: 300px;
+    background: gold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    height: 100vh;
+    border-radius: 0;
+}
+
+#headerBar {
+    z-index: 1;
+}
+
+.form-control {
+    border-radius: 30px 0px 0px 30px;
+}
+
+#basic-text1{
+    border-radius: 30px;
+    margin-left: -20px;
+    z-index: 5;
+}
+
+.input-group {
+    max-width: 300px;
+}
+
+#filterBtn {
+    background: #5A1A35;
+    border-radius: 20px 0px 0px 20px;
+    position: fixed;
+    padding : 20px;
+    top: 60px;
+    right: 0;
+    display: block;
+    color: white;
+    z-index: 100;
+}
+
+nav {
+    background: #1D2833;
+}
