@@ -15,17 +15,6 @@ class Header extends Component {
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                {/* <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Link</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                                        </li>
-                                    </ul>*/}
                                 </div>
                             </div>
                             <div class = "col-md-4">
@@ -34,19 +23,15 @@ class Header extends Component {
                                     <div class="input-group-append">
                                         <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey" aria-hidden="true"></i></span>
                                     </div>
-
-
                                 </div>
                             </div>
                             <div class="col-md-4 pr-0">
             <ul class="navbar-nav float-right">
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="menuBtn" onClick={menuOpen} role="button"><i class="fas fa-filter"></i></a>
-        </li>
+
         </ul>
                             </div>
         </div>
-            <div class="dropdown-menu d-none p-3" id="menu-box" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu d-none" id="filter-box" aria-labelledby="navbarDropdown">
             <a class = "" onClick={menuClose}> <i class="fas fa-window-close"></i> </a>
             <div class = "d-flex flex-column w-100 align-items-center">
         <a class="menu-list" href="#">Action</a>
@@ -64,11 +49,11 @@ class Header extends Component {
 }
 
 function menuOpen() {
-    $("#menu-box").removeClass("d-none");
+    $("#filter-box").removeClass("d-none");
     console.log("jead");
 }
 function menuClose() {
-    $("#menu-box").addClass("d-none");
+    $("#filter-box").addClass("d-none");
 }
 
 export default Header;
