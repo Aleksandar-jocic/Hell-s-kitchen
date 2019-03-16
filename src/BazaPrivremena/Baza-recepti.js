@@ -46,7 +46,7 @@ export const recipes = [
         chef: 'chicha',
         name: 'Gioze',
         src_name: 'gioze',
-        src_chef: 'kuvar8'
+        src_chef: 'kuvar6'
     },
     {
         id: 8,
@@ -67,7 +67,7 @@ export const recipes = [
         chef: 'chicha',
         name: 'Letnja Salata',
         src_name: 'letnja_salata',
-        src_chef: 'kuvar8'
+        src_chef: 'kuvar6'
     },
     {
         id: 11,
