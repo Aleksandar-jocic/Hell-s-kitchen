@@ -5,14 +5,16 @@ import App from './App';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import MenuBar from './MenuBar/MenuBar';
-import RecepieModule from './Recepie-module/recepie-module'
+import CardList from './Recipes-card-list/recipes-card-list';
+
 import * as serviceWorker from './serviceWorker';
 import $ from 'jquery';
 
 ReactDOM.render(<Header />, document.getElementById('header'));
 ReactDOM.render(<MenuBar />, document.getElementById('menu-bar'));
 ReactDOM.render(<Footer />, document.getElementById('footer'));
-ReactDOM.render(<RecepieModule />, document.getElementById('recepie-module'));
+ReactDOM.render(<CardList />, document.getElementById('card-list'));
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
