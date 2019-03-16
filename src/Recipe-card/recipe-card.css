@@ -1,0 +1,33 @@
+.recipe-card{
+    display: block;
+}
+
+.recipe-container{
+    width: inherit;
+    overflow: hidden;
+    padding: 0;
+}
+
+.recipe{
+    width: inherit;
+    overflow: hidden;
+}
+.recipe:hover {
+    transform: scale(1.1);
+}
+.chef {
+    position: absolute;
+    width: 80px;
+    border: 3px solid white;
+    border-radius: 100%;
+    margin-left: -90px;
+    margin-top: 10px;
+}
+
+.recipe-name {
+    min-height: 60px;
+    position: absolute;
+    background: #ffffff90;
+    margin-top: -60px;
+    width: inherit;
+}
