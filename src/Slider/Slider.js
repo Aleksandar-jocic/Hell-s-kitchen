@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './MenuBar.css';
+import './Slider.css';
 
 
-const MenuBar = () => {
+const Slider = () => {
     return ( <div><div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -39,4 +39,4 @@ const MenuBar = () => {
         </div></div>)
 };
 
-export default MenuBar;
+export default Slider;

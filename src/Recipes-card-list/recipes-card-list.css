@@ -1,7 +1,14 @@
 .card-list{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 50px;
-
+    padding: 30px 120px;
+margin-bottom: 35px;
 }
-
+.filter{
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+.filter > a {
+    cursor: pointer;
+    color: #9B5726 ;
+}

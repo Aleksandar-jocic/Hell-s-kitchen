@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './header.css';
 import $ from 'jquery';
+import logo from "../assets/logo/logo.png"
 
 
 class Header extends Component {
@@ -10,7 +11,7 @@ class Header extends Component {
                 <nav class="navbar navbar-expand-lg">
                     <div class = "row w-100">
                         <div class = "col-md-4">
-                            <a class="navbar-brand" href="#">Navbar</a>
+                            <a class="navbar-brand d-flex align-items-center" href="#"><img id="logo" src={logo} height="30px"/> <span>Hells Kitchen</span></a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
@@ -50,10 +51,12 @@ class Header extends Component {
 
 function menuOpen() {
     $("#filter-box").removeClass("d-none");
+    $("#filterBtn").addClass("d-none");
     console.log("jead");
 }
 function menuClose() {
     $("#filter-box").addClass("d-none");
+    $("#filterBtn").removeClass("d-none");
 }
 
 export default Header;

@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import MenuBar from './MenuBar/MenuBar';
+import Slider from './Slider/Slider';
 import CardList from './Recipes-card-list/recipes-card-list';
-
 import * as serviceWorker from './serviceWorker';
-import $ from 'jquery';
+
 
 ReactDOM.render(<Header />, document.getElementById('header'));
-ReactDOM.render(<MenuBar />, document.getElementById('menu-bar'));
+ReactDOM.render(<Slider />, document.getElementById('slider'));
 ReactDOM.render(<Footer />, document.getElementById('footer'));
 ReactDOM.render(<CardList />, document.getElementById('card-list'));
 

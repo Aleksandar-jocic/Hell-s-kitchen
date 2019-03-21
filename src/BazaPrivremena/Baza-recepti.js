@@ -9,28 +9,28 @@ export const recipes = [
     {
         id: 2,
         chef: 'prava_dama',
-        name: 'Vocna salata',
+        name: 'Voćna salata',
         src_name: 'vocna_salata',
         src_chef: 'kuvar3'
     },
     {
         id: 3,
         chef: 'nigga',
-        name: 'Juneci Burger',
+        name: 'Juneći Burger',
         src_name: 'juneci_burger',
         src_chef: 'kuvar4'
     },
     {
         id: 4,
         chef: 'bleda',
-        name: 'Engleski dorucak',
+        name: 'Engleski doručak',
         src_name: 'engleski_dorucak',
         src_chef: 'kuvar2'
     },
     {
         id: 5,
         chef: 'ledja_zena',
-        name: 'Zdrav dorucak',
+        name: 'Zdrav doručak',
         src_name: 'zdrav_dorucak',
         src_chef: 'kuvar5'
     },

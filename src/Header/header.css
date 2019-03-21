@@ -1,7 +1,7 @@
 #filter-box {
     position: fixed;
     right: 0;
-    top:58px;
+    top:54px;
     width: 300px;
     background: #5A1A35;
     display: flex;
@@ -11,8 +11,24 @@
     height: calc(100vh - 58px);
     border-radius: 0;
     padding: 25px 15px;
-}
+    z-index: 102;
+    -webkit-box-shadow: -7px 7px 20px -8px rgba(90,26,53,1);
+    -moz-box-shadow: -7px 7px 20px -8px rgba(90,26,53,1);
+    box-shadow: -7px 7px 20px -8px rgba(90,26,53,1);
 
+}
+.navbar-brand {
+    cursor: pointer;
+}
+#logo{
+    padding-right: 10px;
+}
+.navbar-brand span {
+    line-height: 25px;
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+    color: #FFF2E0;
+}
 #headerBar {
     z-index: 1;
 }
@@ -45,12 +61,27 @@
     display: block;
     color: white;
     z-index: 100;
+    -webkit-box-shadow: 0px 7px 7px -8px rgba(90,26,53,1);
+    -moz-box-shadow: 0px 7px 7px -8px rgba(90,26,53,1);
+    box-shadow: 0px 7px 7px -8px rgba(90,26,53,1);
+
 }
 
-nav {
+.navbar {
     background: #1E2832;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    -webkit-box-shadow: 0px 7px 20px -8px rgba(30,40,50,0.61);
+    -moz-box-shadow: 0px 7px 20px -8px rgba(30,40,50,0.61);
+    box-shadow: 0px 7px 20px -8px rgba(30,40,50,0.61);
+
 }
 
 nav > a {
     color: #E8C38C;
+}
+
+i{
+    color:#FFF2E0;
 }
