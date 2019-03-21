@@ -32,8 +32,7 @@ class Header extends Component {
         </ul>
                             </div>
         </div>
-            <div class="dropdown-menu d-none" id="filter-box" aria-labelledby="navbarDropdown">
-            <a class = "" onClick={menuClose}> <i class="fas fa-window-close"></i> </a>
+            <div class="dropdown-menu" id="filter-box" aria-labelledby="navbarDropdown">
             <div class = "d-flex flex-column w-100 align-items-center">
         <a class="menu-list" href="#">Action</a>
             <a class="menu-list" href="#">Another action</a>
@@ -42,7 +41,8 @@ class Header extends Component {
         </div>
                 </nav>
         <div id="filterBtn" class="pr-3">
-        <a class="nav-link p-0" id="menuBtn" onClick={menuOpen} role="button"><i class="fas fa-filter"></i></a>
+        <a class="nav-link p-0" id="menuBtnOpen" onClick={menuOpen} role="button"><i class="fas fa-filter"></i></a>
+        <a class="nav-link p-0 d-none" id="menuBtnClose" onClick={menuClose} role="button"><i class="fas fa-filter"></i></a>
         </div>
         </div>
     );
@@ -50,13 +50,21 @@ class Header extends Component {
 }
 
 function menuOpen() {
-    $("#filter-box").removeClass("d-none");
-    $("#filterBtn").addClass("d-none");
+
+    $("#filter-box").addClass("slide-left");
+    $("#filterBtn").addClass("slide-left");
+    $("#menuBtnClose").removeClass("d-none");
+    $("#menuBtnOpen").addClass("d-none");
+
     console.log("jead");
 }
 function menuClose() {
-    $("#filter-box").addClass("d-none");
-    $("#filterBtn").removeClass("d-none");
+
+
+    $("#filter-box").removeClass("slide-left");
+    $("#filterBtn").removeClass("slide-left");
+    $("#menuBtnClose").addClass("d-none");
+    $("#menuBtnOpen").removeClass("d-none");
 }
 
 export default Header;
