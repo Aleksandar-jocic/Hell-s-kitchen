@@ -5,6 +5,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Slider from './Slider/Slider';
 import CardList from './Recipes-card-list/recipes-card-list';
+import FilterMenu from './filter-menu/filter-menu'
 import * as serviceWorker from './serviceWorker';
 
 
@@ -12,6 +13,7 @@ ReactDOM.render(<Header />, document.getElementById('header'));
 ReactDOM.render(<Slider />, document.getElementById('slider'));
 ReactDOM.render(<Footer />, document.getElementById('footer'));
 ReactDOM.render(<CardList />, document.getElementById('card-list'));
+ReactDOM.render(<FilterMenu />, document.getElementById('filter-menu'));
 
 
 // If you want your app to work offline and load faster, you can change
