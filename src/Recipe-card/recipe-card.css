@@ -1,0 +1,57 @@
+.recipe-card{
+    display: block;
+    cursor: pointer;
+}
+.recipe-href{
+    width: inherit;
+}
+
+.recipe-container{
+    width: inherit;
+    overflow: hidden;
+    padding: 0;
+}
+
+.recipe{
+    width: inherit;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+.recipe-href:hover .recipe {
+    transform: scale(1.1);
+}
+.chef {
+    position: absolute;
+    width: 50px;
+    border: 3px solid white;
+    border-radius: 100%;
+    margin-top: 7px;
+    transition: all .4s ease-in-out;
+    filter: opacity(.8);
+    right: 10px;
+    z-index: 1;
+}
+
+.recipe-name {
+    min-height: 60px;
+    position: absolute;
+    background: #FFF2E090;
+    margin-top: -60px;
+    width: inherit;
+    transition: all .4s ease-in-out;
+}
+h5 {
+    font-size: 16px;
+    font-weight: inherit;
+    color: #1E2832;
+}
+.chef:hover {
+    transform: scale(1.1);
+    filter: opacity(1);
+}
+
+.recipe-container:hover .recipe-name{
+    background: #FFF2E0e0;
+    font-weight: 600;
+}
+
