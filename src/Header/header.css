@@ -1,9 +1,11 @@
 #filter-box {
     position: fixed;
     right: 0;
-    top:0px;
+/* my imps */
+    top:56px;
     width: 300px;
-    background: #EAC590;
+/* my imps */
+    background: #272727;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -62,7 +64,8 @@
 }
 
 #filterBtn {
-    background: #EAC590;
+/* my imps */
+    background: #272727;
     right: -12px;
     border-radius: 20px 0px 0px 20px;
     position: fixed;
@@ -93,14 +96,33 @@
 }
 
 nav > a {
-    color: #E8C38C;
+/* my imps */
+    color:rgb(255, 153, 0);
 }
 
 i{
-    color:#B80311;
+/* my imps */
+    color:rgb(255, 153, 0);
     font-size: inherit;
 }
 
 #filterBtn  i {
     font-size: 20px;
+}
+/* my imps */
+.menu-list {
+    color:rgb(255, 153, 0);
+}
+.userInfo {
+    text-align: center;
+}
+.userInfo > i {
+    font-size: 1.8rem;
+    padding: 6px;
+}
+.userInfo > span {
+    font-size: 1rem;
+    color: white;
+    position: relative;
+    bottom: 5px;
 }

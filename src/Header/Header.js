@@ -26,10 +26,11 @@ class Header extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 pr-0">
-            <ul class="navbar-nav float-right">
-
-        </ul>
+                            <div class="col-md-4 pr-0 userInfo">
+                                {/* <ul class="navbar-nav float-right"> */}
+                                <i class="fas fa-user-circle"></i>
+                                <span>Aleksandar</span>
+                                {/* </ul> */}
                             </div>
         </div>
             <div class="dropdown-menu" id="filter-box" aria-labelledby="navbarDropdown">
