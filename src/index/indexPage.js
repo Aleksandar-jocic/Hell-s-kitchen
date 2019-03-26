@@ -2,6 +2,7 @@ import React from 'react';
 //modules
 import Slider from '../Slider/Slider';
 import CardList from '../Recipes-card-list/recipes-card-list';
+import FilterMenu from '../filter-menu/filter-menu';
 
 class IndexPage extends React.Component {
 
@@ -11,7 +12,6 @@ class IndexPage extends React.Component {
         this.state = {
 
         }
-
     }
 
     render() {
@@ -21,6 +21,7 @@ class IndexPage extends React.Component {
             <div>
                 <Slider/>
                 <CardList/>
+                <FilterMenu/>
             </div>
         )
     }
