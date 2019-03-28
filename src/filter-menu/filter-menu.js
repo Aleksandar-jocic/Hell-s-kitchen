@@ -3,7 +3,7 @@ import './filter-menu.css';
 import $ from 'jquery';
 import Select from 'react-select';
 
-const options = [
+const ingredients = [
     { value: 'čokolada', label: 'Čokolada' },
     { value: 'jagode', label: 'Jagode' },
     { value: 'krompir', label: 'Krompir' },
@@ -15,7 +15,16 @@ const options = [
     { value: 'paprike', label: 'Paprike' },
     { value: 'oslić', label: 'Oslić' }
 ];
-const options2 = [
+const allergens = [
+    { value: 'biber', label: 'Vegan' },
+    { value: 'jagode', label: 'Vegetarijansko' },
+    { value: 'čokolada', label: 'Posno' },
+    { value: 'laktoza', label: 'Dijetalno' },
+    { value: 'kikiriki', label: 'Raw' },
+    { value: 'kukuruz', label: 'Egzotično' },
+    { value: 'krastavac', label: 'Riba' },
+];
+const specialDiets = [
     { value: 'vegan', label: 'Vegan' },
     { value: 'vegetarijansko', label: 'Vegetarijansko' },
     { value: 'posno', label: 'Posno' },
@@ -47,18 +56,24 @@ class FilterMenu extends React.Component {
             isMulti
             value={selectedOption}
             onChange={this.handleChange}
-            options={options}
+            options={ingredients}
             />
                 <p>Alergeni</p>
+            <Select
+        isMulti
+        value={selectedOption}
+        onChange={this.handleChange}
+        options={allergens}/>
                 <p>Specijalna Ishrana</p>
         <Select
         isMulti
         value={selectedOption}
         onChange={this.handleChange}
-        options={options2}
-        />
+        options={specialDiets}/>
                 <p>Raspon cene</p>
-                <p>Broj Osoba</p>
+
+
+
                 <p>Vreme pripreme</p>
                 <p>Nutricionističke Informacije</p>
             <a className="menu-list" href="#">Action</a>
